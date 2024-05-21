@@ -17,20 +17,20 @@
             class="search"
             placeholder="Search or type URL"
             onkeyup="enter(event)"
-          /><button class="cancel" onclick='
+          /><button
+            class="cancel"
+            onclick='
            s = "";
           searchInput.value = "";
           cleartext.innerHTML = ``;
-          paragraph.innerHTML = paragraph.textContent.replace(
-        `<span class = "searchedText" id = "searchedText">${s}</span>`,
-        s
-        );
-          '></button>
+          paragraph.innerHTML = paragraph.textContent.replace(`<span class = "searchedText" id = "searchedText">${s}</span>`, s);'
+          ></button>
           <a href="#searchedText" class="submit">
             <img
               src="img/icons8.png"
               alt="search button"
               class="search-icon"
+              onclick="search(s)"
             />Search
           </a>
         </div>
