@@ -85,10 +85,16 @@ img {
   width: 100%;
   text-align: left;
 }
-h1 {
+h2 {
   text-align: center;
 }
 .searchedText {
   background-color: yellow;
   font-weight: 900;
+}
+.para {
+  width: 100%;
+  word-wrap: break-word;
+  word-spacing: 2px;
+  font-size: 14px;
 }
